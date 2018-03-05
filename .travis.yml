@@ -1,8 +1,7 @@
 language: erlang
 
 env:
-  - LUA=""
-  - LUA="luajit"
+  - LUA="5.1"
 
 branches:
   only:
@@ -12,6 +11,7 @@ install:
   - sudo apt-get install luajit
   - sudo apt-get install lua-unit
   - sudo apt-get install lua-bitop
+  - sudo apt-get install lua5.1
   
 script:
   - lua test/testiptools.lua
