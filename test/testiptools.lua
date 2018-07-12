@@ -1,7 +1,7 @@
 --
 -- IP address lua module tester
 --
-package.path = package.path .. ';./src/?.lua'
+package.path = package.path .. ';./src/init.lua'
 
 -- Unit testing starts
 require('luaunit')
